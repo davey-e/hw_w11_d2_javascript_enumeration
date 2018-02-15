@@ -5,9 +5,12 @@ const arrayTasks = {
     return newArray.concat(arr1, arr2);
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+    arrayLeft = arr.slice(0, index);
+    arrayRight = arr.slice(index, arr.length);
+    arrayLeft.push(itemToAdd);
+    return arrayTasks.concat(arrayLeft, arrayRight);
+	},
 
 	// square: function (arr) {
 
