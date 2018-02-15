@@ -12,9 +12,11 @@ const arrayTasks = {
     return arrayTasks.concat(arrayLeft, arrayRight);
 	},
 
-	// square: function (arr) {
-
-	// },
+	square: function (arr) {
+    return arr.map(function(item){
+      return item ** 2;
+    });
+	},
 
 	// sum: function (arr) {
 
